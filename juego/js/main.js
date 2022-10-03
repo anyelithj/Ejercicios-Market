@@ -57,7 +57,7 @@ let valation = () => {
         ? `El numero ingresado es Mayor / ${help} / vidas ${--life}`
         : `El numero ingresado es Menor / ${help} / vidas ${--life}`;
         item.life = life
-        resultPlay = (life === 0)?  showTable(item): ''
+        resultPlay = (life === 0)? alert('Game Over'): ''
         console.log(item)
       }
        
@@ -72,7 +72,7 @@ let clearForm = () =>{
   name = ""
 }
 let showTable = (item) => {
-    alert('Game Over')
+    // alert('Game Over')
     bodyTable.innerHTML = "";
     item.forEach(element => {
         const {name,life} = element;
